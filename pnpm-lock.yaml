@@ -8,12 +8,18 @@ importers:
 
   .:
     dependencies:
+      '@formkit/auto-animate':
+        specifier: ^0.8.2
+        version: 0.8.2
       '@nuxt/ui':
         specifier: 3.0.0-alpha.6
         version: 3.0.0-alpha.6(embla-carousel@8.3.0)(ioredis@5.4.1)(magicast@0.3.5)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.3)(vite@5.4.10(@types/node@22.7.9)(lightningcss@1.27.0)(terser@5.36.0))(vue@3.5.12(typescript@5.6.3))
       nuxt:
         specifier: ^3.13.2
         version: 3.13.2(@parcel/watcher@2.4.1)(@types/node@22.7.9)(ioredis@5.4.1)(lightningcss@1.27.0)(magicast@0.3.5)(rollup@4.24.0)(terser@5.36.0)(typescript@5.6.3)(vite@5.4.10(@types/node@22.7.9)(lightningcss@1.27.0)(terser@5.36.0))
+      pocketbase:
+        specifier: ^0.21.5
+        version: 0.21.5
       tailwindcss:
         specifier: 4.0.0-alpha.3
         version: 4.0.0-alpha.3
@@ -773,6 +779,9 @@ packages:
 
   '@floating-ui/vue@1.1.5':
     resolution: {integrity: sha512-ynL1p5Z+woPVSwgMGqeDrx6HrJfGIDzFyESFkyqJKilGW1+h/8yVY29Khn0LaU6wHBRwZ13ntG6reiHWK6jyzw==}
+
+  '@formkit/auto-animate@0.8.2':
+    resolution: {integrity: sha512-SwPWfeRa5veb1hOIBMdzI+73te5puUBHmqqaF1Bu7FjvxlYSz/kJcZKSa9Cg60zL0uRNeJL2SbRxV6Jp6Q1nFQ==}
 
   '@iconify/collections@1.0.474':
     resolution: {integrity: sha512-24NyXV43CZ6fGY5HX7fwur5HgefoL37HVgyw+JAXMMBvkOvdUe3KvQi+lujo/U0hvvcKkqWiy3BiWASDdE2qPA==}
@@ -2857,6 +2866,9 @@ packages:
   pkg-types@1.2.1:
     resolution: {integrity: sha512-sQoqa8alT3nHjGuTjuKgOnvjo4cljkufdtLMnO2LBP/wRwuDlo1tkaEdMxCRhyGRPacv/ztlZgDPm2b7FAmEvw==}
 
+  pocketbase@0.21.5:
+    resolution: {integrity: sha512-bnI/uinnQps+ElSlzxkc4yvwuSFfKcoszDtXH/4QT2FhGq2mJVUvDlxn+rjRXVntUjPfmMG5LEPZ1eGqV6ssog==}
+
   postcss-calc@10.0.2:
     resolution: {integrity: sha512-DT/Wwm6fCKgpYVI7ZEWuPJ4az8hiEHtCUeYjZXqU7Ou4QqYh1Df2yCQ7Ca6N7xqKPFkxN3fhf+u9KSoOCJNAjg==}
     engines: {node: ^18.12 || ^20.9 || >=22.0}
@@ -4317,6 +4329,8 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
+
+  '@formkit/auto-animate@0.8.2': {}
 
   '@iconify/collections@1.0.474':
     dependencies:
@@ -6934,6 +6948,8 @@ snapshots:
       confbox: 0.1.8
       mlly: 1.7.2
       pathe: 1.1.2
+
+  pocketbase@0.21.5: {}
 
   postcss-calc@10.0.2(postcss@8.4.47):
     dependencies:
