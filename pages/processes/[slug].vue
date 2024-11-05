@@ -22,6 +22,7 @@
                     <CoeAP v-if="process.ap_note === 'coe'" class="w-full sm:w-auto"/>
                     <LoaAP v-if="process.ap_note === 'loa'" class="w-full sm:w-auto"/>
                     <CtAP v-if="process.ap_note === 'ct'" class="w-full sm:w-auto"/>
+                    <FCAP v-if="process.ap_note === 'fc'" class="w-full sm:w-auto"/>
                 </div>
 
                 <!-- Policy Button -->
@@ -39,6 +40,7 @@
 <script setup>
 import CoeAP from '~/components/APs/CoeAP.vue';
 import CtAP from '~/components/APs/CtAP.vue';
+import FCAP from '~/components/APs/FCAP.vue';
 import LoaAP from '~/components/APs/LoaAP.vue';
 
 const route = useRoute()
