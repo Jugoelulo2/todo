@@ -98,11 +98,7 @@
         </div>
         <div class="flex gap-4">
           <UTextarea class="flex-grow" v-model="formattedOutput" />
-          <UButton
-            class="self-end"
-            label="Copy"
-            @click="useCopy(formattedOutput)"
-          />
+          <UButton class="self-end" @click="handleCopy">Copy</UButton>
         </div>
       </div>
     </template>
@@ -158,4 +154,8 @@ ${documents.value.length ? documents.value.join("\n") : "None provided"}
 Recommendation:
 ${recommendation.value}`;
 });
+const { text, copy, copied, isSupported } = useClipboard()
+const handleCopy = () => {
+  copy(formattedOutput.value)
+}
 </script>
