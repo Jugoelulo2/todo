@@ -110,7 +110,7 @@
 </template>
 
 <script setup>
-import { useCopy } from "~/composables/useCopy";
+import { useClipboard } from '@vueuse/core'  
 const reasonForApplication = ref("");
 const desiredOutcome = ref("");
 const investigation = ref("");
